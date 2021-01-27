@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +17,8 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+/* Header */
 
 header h1 {
   font-weight: bold;
@@ -48,6 +50,11 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
+/* Header End */
+
+
+/* Footer */
+
 footer {
   background: #fce138;
   width: 100%;
@@ -72,10 +79,12 @@ footer a {
   color: #024e76;
 }
 
+/* Footer End */
+
+
 /* HERO STYLES START */
 .hero {
   background-image: url("../images/hero-bg.jpg");
-  padding: 600px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -144,9 +153,26 @@ footer a {
 }
 /* HERO STYLES END */
 
-.intro {
+
+/* Section Title */
+
+.section-title {
+  font-size: 55px;
+  display: inline-block;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
+  padding-bottom: 20px;
   text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
+
+/* Section Title End */
+
+
+/* What We Do */
 
 .intro p {
   line-height: 1.7;
@@ -154,20 +180,16 @@ footer a {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
+
+/* What We Do End */
+
+
+/* What You Do */
 
 .steps {
-  text-align: center;
   background: #fce138;
-}
-
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
 }
 
 .primary-border {
@@ -178,33 +200,58 @@ footer a {
   border-color: #39a6b2;
 }
 
-.steps div {
-  margin-bottom: 80px;
-}
-
-.steps img {
-  width: 15%;
-  margin: 10px 0;
-} 
-
-.steps h3 {
+.step h3 {
   color: #024e76;
   font-size: 46px;
-  margin-top: 10px;
+  flex: 1 30%;
 }
 
-.steps p {
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-text p {
   color: #39a6b2;
-  font-size: 23px;
+  font-size: 18px;
 }
 
-.steps span {
-  font-size: 38px;
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76
 }
 
-.trainers {
-  text-align: center;
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
 }
+
+.step-img img {
+  max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* What You Do End */
+
+
+/* Trainers */
 
 .trainer {
   width: 900px;
@@ -225,14 +272,6 @@ footer a {
   width: 65%;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
 .trainer-bio h3 {
   font-size: 32px;
   margin-bottom: 8px;
@@ -249,22 +288,17 @@ footer a {
   line-height: 1.3;
 }
 
+/* Trainers End */
+
+
+/* Reach Out */
+
 .contact {
-  text-align:center;
   background-color: #024e76;
 }
 
 .contact h2 {
   color: #fce138;
-}
-
-.section-title {
-  font-size: 55px;
-  display: inline-block;
-  padding: 0 100px 20px 100px;
-  border-bottom: 3px solid;
-  margin-bottom: 35px;
-  color: #024e76;
 }
 
 .contact-info iframe {
@@ -295,4 +329,21 @@ footer a {
 
 .contact-info a {
   color: #fce138;
+}
+
+/* Reach Out End */
+
+
+/* Utilities */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
 }
